@@ -13,12 +13,18 @@ struct ContentView: View {
             Image(systemName: "globe")
                 .imageScale(.large)
                 .foregroundStyle(.tint)
-            Text("Hello, world!")
+            Text("Hello, Swift world!")
+            Button("Hello!", action: pressedHI)
         }
         .padding()
     }
 }
 
+
 #Preview {
     ContentView()
+}
+
+func pressedHI() {
+   print("Hello!")
 }
